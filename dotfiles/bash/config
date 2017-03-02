@@ -54,3 +54,13 @@ PS1="\[$BLUE\]\$(vcprompt)\[\033[33;1m\]\w\[\033[m\]\$ "
 
 # Tab/Window title for Terminal.app to match current directory
 PROMPT_COMMAND='echo -ne "\033]0; ${PWD##*/}\007"'
+
+# nvm
+# ------
+export NVM_DIR="$HOME/.nvm"
+. "$(brew --prefix nvm)/nvm.sh"
+
+# asdf
+# ------
+. $HOME/.asdf/asdf.sh
+. $HOME/.asdf/completions/asdf.bash
