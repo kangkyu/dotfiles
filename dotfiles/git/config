@@ -9,7 +9,7 @@
 	branch = auto
 [core]
 	excludesfile = ~/.gitignore
-	editor = mate -w
+	editor = subl -w
 	autocrlf = input
         paget = less -x4
 	pager = less -x3

@@ -1,4 +1,4 @@
-export EDITOR="mate -w"
+export EDITOR="subl -w"
 
 # ~/bin is prepended to have ~/bin/ssh replace /usr/bin/ssh
 export PATH="~/.rbenv/bin:~/bin:/usr/local/bin:/usr/local/sbin:/usr/local/heroku/bin:$PATH"
