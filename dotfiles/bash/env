@@ -1,13 +1,13 @@
 export EDITOR="subl -w"
 
 # ~/bin is prepended to have ~/bin/ssh replace /usr/bin/ssh
-export PATH="~/.rbenv/bin:~/bin:/usr/local/bin:/usr/local/sbin:/usr/local/heroku/bin:$PATH"
+export PATH="~/.rbenv/shims:~/bin:/usr/local/bin:/usr/local/sbin:/usr/local/heroku/bin:$PATH"
 
 export NODE_PATH="$NODE_PATH:/usr/local/lib/node_modules"
 
 
 # added by travis gem
-[ -f /Users/claudiob/.travis/travis.sh ] && source /Users/claudiob/.travis/travis.sh
+[ -f /Users/klee/.travis/travis.sh ] && source /Users/klee/.travis/travis.sh
 
 
 # I use this environment variable for Rails >= 4 apps deployed on Heroku
@@ -19,3 +19,6 @@ export SECRET_KEY_BASE='12a9a7d90ce4689b67781c76882604e855ec16f45979196b19d6c724
 # export RUBY_HEAP_SLOTS_GROWTH_FACTOR=1
 # export RUBY_GC_MALLOC_LIMIT=1000000000
 # export RUBY_HEAP_FREE_MIN=500000
+
+export HOMEBREW_NO_INSTALL_CLEANUP=true
+export HOMEBREW_NO_AUTO_UPDATE=true
